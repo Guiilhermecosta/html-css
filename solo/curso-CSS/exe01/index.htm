@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;/*align-items: center; alinhamento horizontal, flex box*/
+            justify-content: center;
+        }
+        .botao{
+            background-color: #0d3c66;
+            color: rgba(255, 255, 255, 0.932);
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            align-self: flex-end;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            text-decoration: dashed;
+        }
+        /**/
+        
+        .botao:hover{
+            background-color: aqua;
+            color: black;
+        }
+        h1{
+        text-transform: none;/*text-transform: uppercase; tudo para maiusculas, text-transform: lowercase; tudo para minusculas, text-transform: capitalize; a primeira letra de cada palavra vai ficar maiuscula.*/
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .container{
+            max-width: 600px;
+            background-color: black;
+        }
+        .container div{
+            text-indent: 10px;
+            letter-spacing: 2px;/*letter-spacing: 2px; espaçar as letras uma da outra, entre as letras*/
+            line-height: 1.5;/*line-height, altura da linha, adicionamos valores em casas decimais*/
+            word-spacing: normal;/*word-spacing: 10px; espaçamento entre palavras*/
+            padding: 30px;
+            color: rgba(255, 255, 255, 0.89);
+            margin: 2px;
+            background-color: #0d3c66;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <a href="#"><input class="botao" type="button" value="Tema"></a>
+    <h1>Estudos em CSS</h1>
+    <div class="container">
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod praesentium ratione tenetur ducimus vitae optio quasi accusantium reiciendis neque quam est, hic eveniet quisquam sequi temporibus ab recusandae repellat.</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae in quidem quod pariatur commodi. Expedita illum quas optio asperiores tempore facilis earum, possimus, odit nostrum harum ex, eveniet doloremque eius?</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque eum alias ducimus at praesentium, iusto quia est quo eaque dignissimos minima atque perspiciatis sint ad soluta quidem dolore vero?</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti porro illo aperiam mollitia. Exercitationem vero recusandae quaerat commodi dicta quo illum doloremque similique quos eum beatae, optio voluptas vitae ad!
+    Fugiat, mollitia recusandae beatae nemo sint ducimus esse modi amet, voluptatum, nobis laboriosam adipisci. Voluptates laboriosam, voluptatibus nihil corrupti temporibus quaerat. Sequi vel doloremque laudantium perspiciatis temporibus quibusdam inventore libero.
+    Voluptatum, magni accusamus. Error veniam commodi unde voluptate explicabo fugit necessitatibus quis veritatis quo. Similique inventore delectus laboriosam sit cumque, repellat nam eaque, at neque non minus cum ipsum totam?</p>
+</body>
+</html>

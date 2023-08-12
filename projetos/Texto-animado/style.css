@@ -1,0 +1,42 @@
+div.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
+    font-size: 700;
+    animation: wave ease-in-out infinite; /* tipo de animação em onda*/
+}
+.text:nth-of-type(1){
+    animation-duration: 2s;
+    animation-delay: 0.55s;
+     /*
+    animation-delay: ; atraso da animação
+    
+    animation-duration: 2s; Duração da animação
+    */
+}
+.text:nth-of-type(2){
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+}
+.text:nth-of-type(3){
+    animation-duration: 2s;
+    animation-delay: 0.05s;
+}
+.text:nth-of-type(4){
+    animation-duration: 2s;
+    animation-delay: -0.2s;
+}
+@keyframes wave{
+    40%, 50%{
+        transform: translate(-50%, -65%) scale(1.05);
+    }
+    0%, 90%, 100%{
+        transform: translate(-50%, -45%) scale(0.95);
+    }
+}

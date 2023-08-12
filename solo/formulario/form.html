@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromulário</title>
+    <style>
+        body{
+            padding: 0 10%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 255, 0.616); 
+            color: #ffffffe8;
+            position: relative;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            border: solid 2px blueviolet;
+            max-width: 500px;
+            padding: 0 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body><!--<input type="checkbox" name="chek" id="check">-->
+    <form action="">
+        <h1>Formulário</h1>
+        
+            <label for="name">Name:</label>
+            <!--input do type text, texto-->
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        
+        <label for="email">Email:</label>
+        <!--input do type email-->
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        
+        <label for="sennha">Senha:</label>
+        <!--input do type password, senha-->
+        <input type="password" name="senha" id="senha" placeholder="Senha" required>
+
+        <p>Animel de estimação</p><!--todos são da classe animal, só posso selecionar um item por vez, com input do type radio-->
+        <!--inputs do type radio, apenas uma seleção-->
+        <div>
+            <input type="radio" name="animal" id="dog" value=""><label for="dog">Cachorro</label>
+            <input type="radio" name="animal" id="cat"><label for="cat">Gato</label>
+            <input type="radio" name="animal" id="bird"><label for="bird">Passáro</label>
+        </div>
+
+        <p>O que você tem em casa?</p>
+        <!--Input do type checkbox, caixinhas para selecinar, pode ser mais de um item. Multiplás escolhas-->
+        <div>
+            <input type="checkbox" name="item1" id="item1"><label for="tv">TV</label>
+            <input type="checkbox" name="item2" id="item2"><label for="geladeira">Geladeira</label>
+            <input type="checkbox" name="item3" id="item3"><label for="computador">Computador</label>
+        </div>
+
+        <p>Escolha uma cor:</p>
+        <!--Campo do tipo select-->
+        <select name="cores">
+            <option disabled selected value="">Selecione uma cor:</option>
+            <option value="red">Vermelho</option>
+            <option value="blue">Azul</option>
+            <option value="yellow">Amarelo</option>
+            <option value="green">Verde</option>
+        </select>
+
+        <p>Digite sua mensagem:</p>
+        <!--area para digitar texto adicional por exemplo..-->
+        <textarea required placeholder="Digite" name="mensagem" id="texto" cols="30" rows="10"></textarea>
+        <input type="submit" value="Enviar Fomulário">
+    </form>
+    <!--<input type="button" value="Clique aqui">-->
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        body{
+            font: italic 600 1em Arial, sans-serif;
+            border: 2px solid green;
+        }
+        h1{/*box-level*/
+            text-transform: capitalize;
+            text-align: center;
+            padding: 10px;
+            background-color: #75ccd881;
+            height: 200px;
+            width: 300px;
+            border: 4px solid red;
+            margin: 10px auto 20px auto;/*margin: auto; todo elemento que vc quiser no centro da tela, for uma caixa*/
+            outline: 11px dashed green;
+        }
+        a{/*Inline-level*/
+            display: inline;
+            text-transform: capitalize;
+            text-decoration: none;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>"Parágrafo também são exemplos de box-level, mas os "
+        <a href="#">links são exemplos de caixas inline-level</a>
+        ". vamos ver como tudo funciona."
+    </p>
+</body>
+</html>

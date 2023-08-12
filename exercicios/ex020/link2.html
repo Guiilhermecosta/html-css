@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores personalizados</title>
+    <style>
+        body{
+            font: normal bold 18px Arial, sans-serif;
+        }
+        h1{
+            color: #ffffffef;
+            background-color: rgba(255, 0, 0, 0.911);
+            text-align: center;
+        }
+        h1::before{
+            content: '< ';
+            color: white;
+        }
+        h1::after{
+            content: ' />';
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 2px #0000005b;
+            transition: 0.9ms;
+        }
+        a.visitado:visited{
+            color: red;
+        }
+        .ativo:active{
+            background-color: blueviolet;
+        }
+        .efeito:hover{
+            color: white;
+            background-color: black;
+            text-transform: capitalize;
+        }
+        .decorado::before{
+            content: '| ';
+        }
+        .decorado::after{
+            content: ' !';
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores Personalizados</h1>
+    <ol>
+        <li><a target="_blank" rel="external" class="visitado" href="https://youtube.com/cursoemvideo/">YouTube</a></li>
+        <li><a class="ativo" href="https://gustavoguanabara.github.io">Github</a></li>
+        <li><a class="efeito" href="#">Linkedin</a></li>
+        <li><a class="decorado" href="#">Web Site</a></li>
+    </ol>
+</body>
+</html>

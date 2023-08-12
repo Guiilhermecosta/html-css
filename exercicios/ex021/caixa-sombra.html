@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Sombras</title>
+    <style>
+        div{
+            /*box-shadow: 10px 10px 10px black; => 
+            1° Deslocamento horizontal, 
+            2° Deslocamento vertical, 
+            3° Embaçamento (blur), quanto a sombra vai se espalhar no fundo.
+            4° cor (color) => cor da sombra. É possivel usar transparência*/
+            box-shadow: 4px 7px 12px black;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffffd7;
+            padding: 10px;
+            background-color: royalblue;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .borda{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="borda">
+        <h1>Bordas Decoradas</h1>
+    </div>
+    <div>
+        <h1>Caixa com sombras</h1>
+        <p>Vamos aprender a usar sombras com esse exemplo simples</p>
+    </div>
+    <div class="borda">
+        <h1>Bordas Decoradas</h1>
+    </div>
+</body>
+</html>

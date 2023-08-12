@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            /*font-family: serif; 'serif, monospace, sans, serif' posso adicionar apenas a serifa, o navegador vai adiconar uma fonte que ele considera padrão*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            /*Medidas abslutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            rem, configuração principal, 'body, *'
+            recomendação é usar o px ou em, w3c...
+            -em porcentagem do tamanho da fonte padrão
+            */
+
+            /*font-family: Arial, Helvetica, sans-serif; combinação segura, varias fontes em uma mesma declaraçao. CSS WEB SAFE FONTS COMBINATIOS = PESQUISAR NO GOOGLE, SITE W3SCHOOLS*/
+        }
+        h1{
+            /*shorthand para fonte:
+            - Ordem font-style -> font-weight -> font-size -> font-family */
+            font: italic bold 2.5em 'Arial', 'Sans-serif';
+        }
+        h2{
+            font: italic bold 2em 'Helvetica';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae aut distinctio inventore deleniti autem voluptates expedita quo aperiam iure. Vel sequi, sint vitae expedita nulla facere illum. Temporibus, deserunt accusamus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quos neque, minima totam sequi eum optio voluptate incidunt doloremque excepturi omnis ad dolore eligendi earum vero corporis numquam similique cum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quasi a perferendis consequatur assumenda praesentium! Alias minus earum in unde optio expedita laborum aliquam, sed porro provident ullam vel! Perferendis?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur placeat dolores officiis dicta praesentium consectetur numquam fugit at provident repellat corrupti tempora, cumque odit molestias perferendis? Aspernatur recusandae delectus quas!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vel nobis adipisci necessitatibus tempore excepturi velit vitae eius deserunt accusamus, ad doloremque autem beatae quibusdam eligendi tempora veritatis nostrum voluptatibus.</p>
+</body>
+</html>

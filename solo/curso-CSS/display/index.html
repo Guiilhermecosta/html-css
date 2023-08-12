@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        h1{
+            border: 5px double green;
+            text-align: center;
+        }
+        h2{
+            border: 5px groove violet;
+            display: inline;
+        }
+        p{
+            text-align: center;
+            border: 2px solid blue;
+        }
+        p.sp span{
+            padding: 5px;
+            background-color: aquamarine;
+            border: 2px groove red;
+        }
+        div{
+            display: inline-block;
+            width: 30%;
+            height: 150px;
+        }
+        .green{
+            /*display: none; retirar o elemento*/
+            /*visibility: hidden; visibilidade esconder algo, mais ele continua lá*/
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">Display Block / Inline e inline-block</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quaerat asperiores excepturi saepe in aspernatur vero culpa! Voluptas dolorum obcaecati, modi vero iste vitae eveniet cupiditate fugit iure nam mollitia.</p>
+<h2>Display Inline / Inline-Block</h2>
+<p class="sp">Aqui um espan <span>resultado</span>
+    <span>resultado</span>
+    <span>resultado</span>
+    <span>resultado</span></p>
+    <div class="green">one</div>
+    <div class="blue">Two</div>
+    <div class="red">Three</div>
+</body>
+</html>

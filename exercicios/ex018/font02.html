@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Animes';
+            src: url('fontes/Anime.otf') format('opentype');
+            font-style: normal;
+            font-weight: normal;
+        }
+        @font-face {
+            font-family: 'Xtradex';
+            src: url('fontes/Xtradex.otf') format('opentype'), url('dontes/Xtradex.ttf') format('truetype');
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype(ttf)
+                - embedded-opentype
+                - truetype-aat (apple advenced typography)
+                - svg
+            */
+            /*Trabalhando com fontes baixadas do site dafont.com*/
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Xtradex';
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+        h2{
+            text-transform: uppercase;
+            font-family: 'Animes';
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere quae est debitis reiciendis quaerat corporis eligendi! Labore molestias qui delectus eius inventore accusantium dolores? Fuga autem illo tenetur aspernatur.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora libero sapiente doloribus numquam quidem pariatur veniam temporibus ea illum, similique quisquam facere. Repellendus facere sunt dolorem animi praesentium in aspernatur?</p>
+</body>
+</html>
