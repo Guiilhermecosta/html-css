@@ -15,6 +15,7 @@
             margin: auto;
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -29,7 +30,14 @@
         thead, tfoot{
             background-color: #383838;
             color: white;
-        }/*:nth-child(2n) => para adicinar efeito zebrado, na minha tabela. (odd) => impar, (even) => par,(2n) => 2 em 2 adicinar background-color, (2n-1) => 2 em 2, começando do primeiro dado do corpo da minha tabela*/
+        }
+        thead > tr > th {/*position: sticky; => grudar
+            top: -1px; => no topo */
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        /*:nth-child(2n) => para adicinar efeito zebrado, na minha tabela. (odd) => impar, (even) => par,(2n) => 2 em 2 adicinar background-color, (2n-1) => 2 em 2, começando do primeiro dado do corpo da minha tabela*/
         tbody >tr:nth-child(2n){/*odd =>(2n-1), even => (2n)*/
             background-color: lightgray;
         }
