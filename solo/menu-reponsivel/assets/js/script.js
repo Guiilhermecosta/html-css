@@ -4,7 +4,7 @@ function menuShow(){
         menuMobile.classList.remove('open');
         document.querySelector('.icon').src = "assets/img/main-menu.png"
     }else{
-        document.querySelector('.icon').src = "assets/img/close.svg"
+        document.querySelector('.icon').src = "assets/img/close02.png"
         menuMobile.classList.add('open');
     }
 }
