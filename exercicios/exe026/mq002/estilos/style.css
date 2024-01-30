@@ -1,16 +1,16 @@
 @charset "UTF-8";
-/*CONFIGURAÇÕES GERAIS (all)*/
+/*CONFIGURAÇÕES GERAIS (all) => para todas as mideas quiries*/
 *{
     margin: 0;
     padding: 0;font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html body {
     width: 100vw;
     height: 100vh;
     background-color: #233eff;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 h1 {
     color: white;
