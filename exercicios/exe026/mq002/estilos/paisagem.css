@@ -1,7 +1,0 @@
-@charset "UTF-8";
-/* MODO PAISAGEM (landscape) => tela deitada*/
-body {
-    background: url('../imagens/cev-landscape.jpg');
-    background-position: left bottom;
-}
-
