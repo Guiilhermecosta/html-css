@@ -19,13 +19,25 @@
             flex-shrink: 1; /*flex-shrink: 1; valor padrão pode encolher os elementos*/
             flex-grow: 1; /*flex-grow: 0; valor padrão, não pode aumentar o tamanho dos elementos*/
         }
+        div.itemA {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        div.itemB {
+            flex-shrink: 0;
+            flex-grow: 4;
+        }
+        div.itemC {
+            flex-shrink: 3;
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item itemA">A</div>
+        <div class="item itemB">B</div>
+        <div class="item itemC">C</div>
     </div>
 </body>
 </html>
