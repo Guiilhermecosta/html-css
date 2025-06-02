@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-header ,header > nav {
+header, header > nav {
     flex-flow: column nowrap;
 }
 
